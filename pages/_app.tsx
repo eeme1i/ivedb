@@ -4,7 +4,7 @@ import { SiteLayout } from "../components/Layouts";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="w-full h-full min-h-screen text-base font-medium text-white bg-black font-clashgrotesk">
+    <div className="w-full h-full min-h-screen text-base font-normal text-white bg-black font-clashgrotesk">
       <SiteLayout>
         <Component {...pageProps} />
       </SiteLayout>

@@ -1,14 +1,12 @@
 import React from "react";
-import { Navbar } from "../Navbar";
+import { Navbar } from "../Navigation";
 
 export function SiteLayout({ children }: any) {
   return (
     <>
-      <div className="p-2 sm:p-8 sm:py-4">
+      <div className="max-w-[1440px] p-4 mx-auto sm:p-8 sm:py-4">
         <Navbar />
-        <main className="h-full p-2 border border-white border-t-transparent sm:px-4">
-          {children}
-        </main>
+        <main className="h-full ">{children}</main>
       </div>
     </>
   );

@@ -7,8 +7,8 @@ export function NavigationLink({ href, children }: any) {
     <Link href={href}>
       <a
         className={`${
-          router.pathname === href ? "text-white/100" : ""
-        } font-normal duration-150 text-white/50 hover:text-white`}
+          router.pathname === href ? "text-white/100" : "text-white/50"
+        } font-normal duration-150  hover:text-white`}
       >
         {children}
       </a>
