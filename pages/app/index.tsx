@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { createClient } from "@supabase/supabase-js";
-import Image from "next/image";
+import { CardItem } from "../../components/Card";
 
 export async function getStaticProps() {
   const supabaseAdmin = createClient(
@@ -37,15 +37,3 @@ const App: NextPage = ({ items }: { items: Item[] }) => {
 };
 
 export default App;
-
-function CardItem({ item }: { item: Item }) {
-  return (
-    <div>
-      <div className="w-full overflow-hidden aspect-w-1 aspect-h-1">
-        <Image alt="" src={item.imageSrc} layout="fill" objectFit="cover" />
-      </div>
-      <p>{item.name}</p>
-      <p>{item.description}</p>
-    </div>
-  );
-}

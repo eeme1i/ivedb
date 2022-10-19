@@ -1,13 +1,20 @@
 import Image from "next/image";
 
-export function Card({ src, name, description }: any) {
+type Item = {
+  id: number;
+  imageSrc: string;
+  name: string;
+  description: string;
+};
+
+export function CardItem({ item }: { item: Item }) {
   return (
-    <div>
+    <div className="p-4 transition-all duration-150 hover:text-black hover:bg-white">
       <div className="w-full overflow-hidden aspect-w-1 aspect-h-1">
-        <Image alt="" src={src} layout="fill" objectFit="cover" />
+        <Image alt="" src={item.imageSrc} layout="fill" objectFit="cover" />
       </div>
-      <p>{name}</p>
-      <p>{description}</p>
+      <p>{item.name}</p>
+      <p>{item.description}</p>
     </div>
   );
 }

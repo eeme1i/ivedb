@@ -19,7 +19,7 @@ const Home: NextPage = () => {
             Your favorites, <br /> in one place, <br /> in high quality.
           </h1>
           <div className="flex space-x-2">
-            <Button href="https://eem.works" color="white">
+            <Button href="/app" color="white">
               <p>Enter</p>
             </Button>
             <GhostButton href="https://eem.works" color="white">
