@@ -10,7 +10,7 @@ export function Navbar() {
 
       <div className="space-x-4">
         <NavigationLink href="/">Home</NavigationLink>
-        <NavigationLink href="/Catalogue">Catalogue</NavigationLink>
+        <NavigationLink href="/submit">Submit</NavigationLink>
       </div>
     </nav>
   );

@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           <h1 className="text-6xl font-normal font-clashdisplay">
             Your favorites, <br /> in one place, <br /> in high quality.
           </h1>
-          <div className="flex space-x-4">
+          <div className="flex space-x-2">
             <Button href="https://eem.works" color="white">
               <p>Enter</p>
             </Button>
