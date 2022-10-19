@@ -6,7 +6,9 @@ export function SiteLayout({ children }: any) {
     <>
       <div className="p-2 sm:p-8 sm:py-4">
         <Navbar />
-        <main>{children}</main>
+        <main className="h-full p-2 border border-white border-t-transparent sm:px-4">
+          {children}
+        </main>
       </div>
     </>
   );

@@ -11,7 +11,11 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <p className="">hello world!</p>
+        <section className="h-[24em] flex flex-col justify-center">
+          <h1 className="text-6xl font-normal font-clashdisplay">
+            Your favorites, <br /> in one place, <br /> in high quality.
+          </h1>
+        </section>
       </main>
     </div>
   );
