@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { CardItem } from "../../components/Card";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL || "",
     process.env.SUPABASE_SERVICE_ROLE_KEY || ""
