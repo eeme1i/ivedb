@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import { createClient } from "@supabase/supabase-js";
 import { CardItem } from "../../components/Card";
+import Link from "next/link";
+import { ArrowLeft } from "iconoir-react";
 
 export async function getServerSideProps({ params }) {
   const supabaseAdmin = createClient(
@@ -24,8 +26,18 @@ export async function getServerSideProps({ params }) {
 const Details: NextPage = ({ item }: { item: any }) => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-8">
-        <CardItem key={item.id} item={item} />
+      <div className="">
+        <div className="flex justify-end w-full">
+          <Link href="/app">
+            <a className="flex justify-end space-x-4 transition-all items-cente w-max h-max group">
+              <ArrowLeft className="transition-all duration-150 ease-in-out group-hover:-translate-x-1" />
+              Go back
+            </a>
+          </Link>
+        </div>
+        <div className="grid grid-cols-4 gap-8">
+          <CardItem key={item.id} item={item} />
+        </div>
       </div>
     </>
   );

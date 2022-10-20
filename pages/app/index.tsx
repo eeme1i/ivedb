@@ -26,11 +26,10 @@ type Item = {
 const App: NextPage = ({ items }: { items: Item[] }) => {
   return (
     <>
-      <div className="grid grid-cols-4 gap-8">
+      <div className="grid grid-cols-4 gap-4">
         {items.map((item) => (
           <CardItem key={item.id} item={item} />
         ))}
-        <p>app section</p>
       </div>
     </>
   );

@@ -9,7 +9,7 @@ function BaseLink({ href = null, forwardedRef = null, ...rest }: any) {
   );
 }
 
-const baseClasses = "underline transition duration-150 ease-in-out";
+const baseClasses = " transition duration-150 ease-in-out space-x-2 underline ";
 
 function getColor(color = null) {
   switch (color) {
