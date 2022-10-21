@@ -11,21 +11,26 @@ type Item = {
 
 export function CardItem({ item }: { item: Item }) {
   return (
-    <Link href={`/app/${item.id}`}>
-      <div className="transition-all duration-300 bg-neutral-900 hover:scale-[102%] ease-in-out">
-        <div className="w-full overflow-hidden aspect-w-1 aspect-h-1">
-          <Image alt="" src={item.imageSrc} layout="fill" objectFit="cover" />
-        </div>
-        <div className="flex items-center justify-between p-4">
-          <div>
-            <p>{item.name}</p>
-            <p>{item.description}</p>
-          </div>
-          <Button href={`/app/${item.id}`} color="white">
-            View
-          </Button>
-        </div>
+    <div className="hover:scale-[101%] transition-all duration-300 ease-in-out bg-neutral-900 group">
+      <div className="w-full overflow-hidden aspect-w-2 aspect-h-1 ">
+        <Link href={`/app/${item.id}`}>
+          <Image
+            alt=""
+            src={item.imageSrc}
+            layout="fill"
+            objectFit="cover"
+            className="transition-all duration-700 ease-in-out cursor-pointer group-hover:"
+          />
+        </Link>
       </div>
-    </Link>
+      <div className="flex items-center justify-between p-4 space-x-4">
+        <div>
+          <p>{item.name}</p>
+        </div>
+        <Button href={`/app/${item.id}`} color="white">
+          View
+        </Button>
+      </div>
+    </div>
   );
 }

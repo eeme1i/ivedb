@@ -23,7 +23,7 @@ function BaseButton({ href = null, forwardedRef = null, ...rest }: any) {
 }
 
 const baseClasses =
-  "flex space-x-2 flex-none items-center justify-center cursor-pointer rounded-md border-2 transition duration-150 ease-in-out px-2 py-1 text-sm h-max w-max";
+  "flex space-x-2 flex-none items-center justify-center cursor-pointer rounded-md border-2 transition duration-150 ease-in-out px-4 py-1 text-sm h-max w-max";
 
 function getColor(color = null) {
   switch (color) {

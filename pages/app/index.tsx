@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import { createClient } from "@supabase/supabase-js";
 import { CardItem } from "../../components/Card";
 
@@ -25,13 +26,18 @@ type Item = {
 
 const App: NextPage = ({ items }: { items: Item[] }) => {
   return (
-    <>
-      <div className="grid grid-cols-4 gap-4">
+    <div>
+      <Head>
+        <title>App </title>
+        <meta name="description" content={`dope ass app`} />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (
           <CardItem key={item.id} item={item} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

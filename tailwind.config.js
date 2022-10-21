@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         clashgrotesk: ["Clash Grotesk", "sans-serif"],
         clashdisplay: ["Clash Display", "sans-serif"],
+        spacemono: ["Space Mono", "monospace"],
       },
     },
   },
