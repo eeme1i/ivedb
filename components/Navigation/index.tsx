@@ -5,7 +5,7 @@ export function Navbar() {
   return (
     <nav className="flex items-center justify-between px-4 pt-2 pb-4">
       <Link href="/">
-        <a className="text-2xl font-bold font-clashdisplay">appname</a>
+        <a className="text-2xl font-bold font-clashdisplay">ivedb</a>
       </Link>
 
       <div className="space-x-4">

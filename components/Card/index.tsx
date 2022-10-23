@@ -11,7 +11,7 @@ type Item = {
 
 export function CardItem({ item }: { item: Item }) {
   return (
-    <div className="hover:scale-[101%] transition-all duration-300 ease-in-out bg-neutral-900 group">
+    <div className="transition-all duration-300 ease-in-out border hover:border-white/30 border-white/10 bg-neutral-900 group">
       <div className="w-full overflow-hidden aspect-w-2 aspect-h-1 ">
         <Link href={`/app/${item.id}`}>
           <Image
@@ -19,7 +19,7 @@ export function CardItem({ item }: { item: Item }) {
             src={item.imageSrc}
             layout="fill"
             objectFit="cover"
-            className="transition-all duration-700 ease-in-out cursor-pointer group-hover:"
+            className="transition-all duration-700 ease-in-out cursor-pointer"
           />
         </Link>
       </div>
